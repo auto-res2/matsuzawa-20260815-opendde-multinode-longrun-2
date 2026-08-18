@@ -44,7 +44,7 @@ ENV OPENDDE_ROOT_DIR=/data1/rkp00041/plinder_lddt_pli_improvement/model/opendde_
 ENV PYTHONPATH=/workspace
 CMD ["sh", "-c", "set -e; \
 R=.research/results; \
-for pair in 'baseline-pretrained /data1/rkp00041/plinder_lddt_pli_improvement/model/opendde_data/checkpoint/opendde.pt' 'proposed-opendde-openfold3 /data1/rkp00041/rku00121/mz-repro/.research/results/proposed-opendde-openfold3-shared/finetuned.pt'; do \
+for pair in 'baseline-pretrained /data1/rkp00041/plinder_lddt_pli_improvement/model/opendde_data/checkpoint/opendde.pt' 'proposed-opendde-openfold3 /data1/rkp00041/rku00122/opendde-multinode/checkpoints/finetuned-4node-30ep.pt'; do \
   set -- $pair; RID=$1; CKPT=$2; \
   echo \"=== inference $RID ===\"; \
   /data1/rkp00041/plinder_lddt_pli_improvement/model/opendde/.venv/bin/python -u -m src.inference \
