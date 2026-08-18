@@ -3,10 +3,10 @@ run_id: proposed-opendde-openfold3
 
 # Paths on the RIKYU cluster. /data1/rkp00041 is bind-mounted into the job, so
 # these resolve identically inside and outside the container.
-opendde_root: /data1/rkp00041/rku00122/opendde-multinode/opendde_data
-checkpoint: /data1/rkp00041/rku00122/opendde-multinode/opendde_data/checkpoint/opendde.pt
-cache_dir: /data1/rkp00041/rku00122/opendde-multinode/cache/sft
-python_bin: /data1/rkp00041/rku00122/opendde-multinode/opendde-src/.venv/bin/python
+opendde_root: /data1/rkp00041/plinder_lddt_pli_improvement/model/opendde_data
+checkpoint: /data1/rkp00041/plinder_lddt_pli_improvement/model/opendde_data/checkpoint/opendde.pt
+cache_dir: /data1/rkp00041/rku00121/mz-repro-cache/sft
+python_bin: /data1/rkp00041/plinder_lddt_pli_improvement/model/opendde/.venv/bin/python
 
 lr: 1.0e-4
 
